@@ -3,7 +3,7 @@ import {conversations} from '../utils/data';
 
 function Conversations() {
   return (
-    <div className='w-screen h-screen flex items-center justify-center flex-col relative bg-white'>
+    <div className='w-screen h-[130vh] flex items-center justify-center flex-col relative bg-white'>
       <div className='my-10'>
         <h1 className='font-light text-[15px] tracking-tighter'>CONVERSATIONS</h1>
       </div>
