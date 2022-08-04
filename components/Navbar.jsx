@@ -151,7 +151,7 @@ export default function Example(props) {
                 </nav>
               </div>
             </div>
-            <div className="h-72 flex items-end justify-center px-5">
+            <div className=" h-20 flex items-end justify-center px-5">
               <div className="flex items-center justify-around w-96">
                 {resources.map((item) => (
                   <a
