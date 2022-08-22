@@ -11,23 +11,23 @@ import {
 const solutions = [
   {
     name: 'ART',
-    href: '#',
+    href: '/art',
   },
   {
     name: 'DESIGN',
-    href: '#',
+    href: '/design',
   },
   { 
     name: 'PHOTOGRAPHY', 
-    href: '#', 
+    href: '/photography', 
   },
   {
     name: 'ARCHITECTURE',
-    href: '#',
+    href: '/architecture',
   },
   {
     name: 'TRAVEL',
-    href: '#',
+    href: '/travel',
   },
 ]
 

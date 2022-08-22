@@ -49,12 +49,27 @@ const navigation = {
 
 function NewsletterOne() {
   return (
-    <div className='bg-gray-100 w-screen h-[19rem] flex items-center justify-center flex-col'>
+    <div className='flex bg-gray-100 w-screen lg:h-[27rem]'>
+    <div className='w-screen lg:w-1/2 h-[19rem] lg:h-full flex items-center justify-center flex-col'>
         <div className='relative w-full flex items-center justify-center flex-col'>
             <h1 className='mb-[2rem] font-serif text-lg'>Subscribe to our weekly newsletter</h1>
-            <input className='w-3/4 h-[3rem] bg-gray-100 border border-gray-300 pl-4 font-serif' type="text" placeholder='Email'/>
-            <button className='absolute top-[60px] right-[50px] h-[3rem] w-[4rem] bg-gray-100 border border-gray-300'>&rarr;</button>
+            <div className='w-1/2 h-auto flex items-center justify-center'>
+              <input className='w-full h-[3rem] bg-gray-100 border border-gray-300 pl-4 font-serif' type="text" placeholder='Email'/>
+              <button className='h-[3rem] w-[4rem] bg-gray-100 border border-gray-300'>&rarr;</button>
+            </div>
         </div>
+        <div className="mt-8 flex justify-center space-x-6 lg:hidden">
+          {navigation.social.map((item) => (
+            <a key={item.name} href={item.href} className="text-gray-500 hover:text-black">
+              <span className="sr-only">{item.name}</span>
+              <item.icon className="h-8 w-8" aria-hidden="true" />
+            </a>
+          ))}
+        </div>
+    </div>
+
+    <div className='hidden lg:flex items-center justify-center flex-col w-1/2 h-full'>
+        <h1 className='font-light text-[1rem]'>FOLLOW US</h1>
         <div className="mt-8 flex justify-center space-x-6">
           {navigation.social.map((item) => (
             <a key={item.name} href={item.href} className="text-gray-500 hover:text-black">
@@ -63,6 +78,7 @@ function NewsletterOne() {
             </a>
           ))}
         </div>
+    </div>
     </div>
   )
 }

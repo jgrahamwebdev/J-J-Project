@@ -48,8 +48,11 @@ const navigation = {
 
 export default function Example() {
   return (
-    <footer className="h-32 flex items-center justify-center">
-      <div className="bg-white z-10 w-full h-full flex flex-col items-center justify-around">
+    <footer className="h-auto flex items-center justify-center">
+      <div className="bg-white w-full h-full flex flex-col items-center justify-around">
+        <div className="h-auto w-screen flex items-center justify-center">
+          <img className="w-10 h-10 my-4 cursor-pointer" src="/img/logo.png" alt="" />
+        </div>
         <div className="mt-8 flex justify-center space-x-6">
           {navigation.social.map((item) => (
             <a key={item.name} href={item.href} className="text-black hover:text-gray-500">
@@ -61,7 +64,7 @@ export default function Example() {
         <nav className="flex justify-center" aria-label="Footer">
           {navigation.main.map((item) => (
             <div key={item.name} className="px-2 py-10 flex items-center justify-center">
-              <a href={item.href} className="text-[11px] tracking-tighter text-black">
+              <a href={item.href} className="text-[11px] tracking-tighter text-black hover:underline">
                 {item.name}
               </a>
             </div>
