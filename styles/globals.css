@@ -35,9 +35,15 @@ a {
 }
 
 .parallax {
-  background-image: url("https://unsplash.it/500/700");
+  background-image: url("/img/parallax.jpg");
 }
 
 .hero {
   background-image: url('/img/hero-one.jpg');
+}
+
+@media screen and (min-width: 1000px) {
+  .hero {
+    background-image: none;
+  }
 }
