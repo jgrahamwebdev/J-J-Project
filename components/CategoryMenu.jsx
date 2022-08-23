@@ -1,35 +1,38 @@
 import { Fragment, useState, useEffect } from 'react'
 
-function CategoryMenu() {
+//SCROLL HOOK
+function useScrollDirection() {
+  const [scrollDirection, setScrollDirection] = useState(null);
 
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const [top, setTop] = useState(true)
-    const handleScroll = () => {
-      const position = window.scrollY;
-      setScrollPosition(position);
-      if (scrollPosition === 0) {
-        setTop(true)
-      } else if (scrollPosition > 10) {
-        setTop(false)
-      } else if (scrollPosition < 10) {
-        setTop(true)
+  useEffect(() => {
+    let lastScrollY = window.pageYOffset;
+
+    const updateScrollDirection = () => {
+      const scrollY = window.pageYOffset;
+      const direction = scrollY > lastScrollY ? "down" : "up";
+      if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
+        setScrollDirection(direction);
       }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+    };
+    window.addEventListener("scroll", updateScrollDirection); // add event listener
+    return () => {
+      window.removeEventListener("scroll", updateScrollDirection); // clean up
     }
-  
-    useEffect(() => {
-      window.addEventListener('scroll', handleScroll)
-      return () => {
-        window.removeEventListener('scroll', handleScroll)
-      }
-    })
+  }, [scrollDirection]);
+
+  return scrollDirection;
+};
 
 
-
+function CategoryMenu() {
+  //VARIABLE TO CALL SCROLL HOOK
+  const scrollDirection = useScrollDirection();
 
   return (
     <div className='hidden lg:inline-block'>
 
-        <div className={`fixed w-screen h-[6rem] top-[3.3rem] z-[1] ${top ? 'opacity-1 bg-white' : 'opacity-0'} transition duration-300 ease-in-out`}>
+        <div className={`fixed bg-white w-screen h-[6rem] top-[3.3rem] z-[1] ${ scrollDirection === "down" ? "opacity-0" : "opacity-1"} transition duration-300 ease-in-out`}>
             <div className='w-screen h-[1px] bg-gray-100 absolute'></div>
             <ul className='w-full h-full flex items-center justify-center'>
                 <li className='m-4 text-[11px] hover:underline'><a href="/art">ART</a></li>

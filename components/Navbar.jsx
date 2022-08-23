@@ -7,6 +7,7 @@ import {
   SearchIcon,
   XIcon,
 } from '@heroicons/react/outline'
+import Link from 'next/link'
 
 const solutions = [
   {
@@ -88,12 +89,7 @@ export default function Example(props) {
             </Popover.Button>
           </div>
           <div>
-            <img
-              href="#"
-              className="h-9 w-auto cursor-pointer"
-              src="img/logo.png"
-              alt="Workflow"
-            />
+            <Link href='/'><img className="h-9 w-auto cursor-pointer" src="img/logo.png" alt="Logo"/></Link>
           </div>
           <div className="">
             <SearchIcon className="h-5 w-5 cursor-pointer" aria-hidden="true"/>
