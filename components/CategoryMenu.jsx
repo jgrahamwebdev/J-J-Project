@@ -32,7 +32,7 @@ function CategoryMenu() {
   return (
     <div className='hidden lg:inline-block'>
 
-        <div className={`fixed bg-white w-screen h-[4rem] top-[3.3rem] z-[1] ${ scrollDirection === "down" ? "opacity-0" : "opacity-1"} transition duration-300 ease-in-out`}>
+        <div className={`sticky bg-white w-screen h-[4rem] top-[3.3rem] z-[1] ${ scrollDirection === "down" ? "opacity-0" : "opacity-1"} transition duration-300 ease-in-out`}>
             <div className='w-screen h-[1px] bg-gray-100 absolute'></div>
             <ul className='w-full h-full flex items-center justify-center'>
                 <li className='m-4 text-[11px] hover:underline'><a href="/art">ART</a></li>

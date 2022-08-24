@@ -112,7 +112,7 @@ export default function Example(props) {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <Popover.Panel focus className="absolute top-0 inset-x-0 transition transform origin-top-right">
+        <Popover.Panel focus className="absolute top-0 inset-x-0 transition transform origin-top-right z-10">
           <div className="bg-white w-screen h-screen flex flex-col justify-between">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
