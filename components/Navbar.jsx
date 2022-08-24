@@ -8,6 +8,7 @@ import {
   XIcon,
 } from '@heroicons/react/outline'
 import Link from 'next/link'
+import CategoryMenu from './CategoryMenu'
 
 const solutions = [
   {
@@ -79,7 +80,7 @@ export default function Example(props) {
   })
 
   return (
-    <Popover className="fixed z-10">
+    <Popover className="fixed lg:sticky lg:top-0 z-10">
       <nav className="w-screen mx-auto">
         <div className={`flex items-center py-2 px-4 justify-between ${top ? 'bg-none' : 'bg-white'} transition duration-300 ease-in-out lg:bg-white`}>
           <div className="w-8">
@@ -112,7 +113,7 @@ export default function Example(props) {
         leaveTo="opacity-0 scale-95"
       >
         <Popover.Panel focus className="absolute top-0 inset-x-0 transition transform origin-top-right">
-          <div className="bg-white w-screen h-screen">
+          <div className="bg-white w-screen h-screen flex flex-col justify-between">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div className="-mr-2">
@@ -148,7 +149,7 @@ export default function Example(props) {
               </div>
             </div>
             <div className=" h-20 flex items-end justify-center px-5">
-              <div className="flex items-center justify-around w-96">
+              <div className="flex items-center justify-around w-96 h-full">
                 {resources.map((item) => (
                   <a
                     key={item.name}
@@ -163,6 +164,11 @@ export default function Example(props) {
           </div>
         </Popover.Panel>
       </Transition>
+        
+      {/*IPAD,LAPTOP/DESKTOP MENU*/}
+      <CategoryMenu />
+
     </Popover>
+
   )
 }

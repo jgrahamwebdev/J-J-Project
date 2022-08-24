@@ -10,7 +10,7 @@ function useScrollDirection() {
     const updateScrollDirection = () => {
       const scrollY = window.pageYOffset;
       const direction = scrollY > lastScrollY ? "down" : "up";
-      if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
+      if (direction !== scrollDirection && (scrollY - lastScrollY > 1 || scrollY - lastScrollY < -1)) {
         setScrollDirection(direction);
       }
       lastScrollY = scrollY > 0 ? scrollY : 0;
@@ -32,7 +32,7 @@ function CategoryMenu() {
   return (
     <div className='hidden lg:inline-block'>
 
-        <div className={`fixed bg-white w-screen h-[6rem] top-[3.3rem] z-[1] ${ scrollDirection === "down" ? "opacity-0" : "opacity-1"} transition duration-300 ease-in-out`}>
+        <div className={`fixed bg-white w-screen h-[4rem] top-[3.3rem] z-[1] ${ scrollDirection === "down" ? "opacity-0" : "opacity-1"} transition duration-300 ease-in-out`}>
             <div className='w-screen h-[1px] bg-gray-100 absolute'></div>
             <ul className='w-full h-full flex items-center justify-center'>
                 <li className='m-4 text-[11px] hover:underline'><a href="/art">ART</a></li>
