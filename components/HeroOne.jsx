@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroOne() {
   return (
-    <div className="w-screen h-[140vh] relative hero bg-cover flex items-center justify-between lg:bg-white lg:h-screen">
+    <div className="w-screen h-[140vh] relative hero bg-cover flex items-center justify-between lg:bg-white lg:h-[85vh]">
 
       <div className='w-screen h-[34rem] flex items-center justify-center text-center absolute lg:hidden'>
         <h1 className='text-[2.5rem] font-serif text-black'>LOREM ipsum dolor sit</h1>
@@ -13,7 +13,7 @@ function HeroOne() {
       </div>
 
       {/*iPad, Laptop, Desktop display*/}
-      <div className='hidden lg:flex w-screen h-[65%] mx-8 bg-gray-100'>
+      <div className='hidden lg:flex w-screen h-[80%] mx-8 bg-gray-100'>
         <div className='w-1/2 h-full'>
           <img className='w-full h-full object-cover' src="https://unsplash.it/1000/1000" alt="" />
         </div>
