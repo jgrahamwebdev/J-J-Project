@@ -82,7 +82,7 @@ export default function Example(props) {
   return (
     <Popover className="fixed lg:sticky lg:top-0 z-10">
       <nav className="w-screen mx-auto">
-        <div className={`flex items-center py-2 px-4 justify-between ${top ? 'bg-none' : 'bg-white'} transition duration-300 ease-in-out lg:bg-white`}>
+        <div className={`flex items-center py-2 px-4 justify-between ${top ? 'bg-transparent' : 'bg-white'} transition duration-300 ease-in-out lg:bg-white`}>
           <div className="w-8">
             <Popover.Button className="p-2 inline-flex items-center justify-center text-black">
               <span className="sr-only">Open menu</span>

@@ -71,7 +71,6 @@ export const articles = [
     },
 ]
 
-
 export const editorials = [
     {
         id: 1,
@@ -113,5 +112,88 @@ export const conversations = [
         subtitle:'TRAVEL',
         subtitleTwo:'OTHER',
         url: `/img/img-seven.jpg`,
+    },
+]
+
+export const artData = [
+    {
+        id: 1,
+        title: 'Lorem Ipsum',
+        artist: 'Firstname Lastname',
+        subtitle:'ART',
+        subtitleTwo:'OTHER',
+        url: `/img/img-one.jpg`,
+    },
+    {
+        id: 2,
+        title: 'Dolor Sit Amet',
+        artist: 'Firstname Lastname',
+        subtitle:'TRAVEL',
+        subtitleTwo:'OTHER',
+        url: `/img/img-two.jpg`,
+    },
+    {
+        id: 3,
+        title: 'Ad Ipsa Dolorem',
+        artist: 'Firstname Lastname',
+        subtitle:'TRAVEL',
+        subtitleTwo:'PRODUCT',
+        url: `/img/img-three.jpg`,
+    },
+    {
+        id: 4,
+        title:'Iusto Id Nihil',
+        artist: 'Firstname Lastname',
+        subtitle:'DESIGN',
+        subtitleTwo:'PHOTOGRAPHY',
+        url: `/img/img-four.jpg`,
+    },
+    {
+        id: 5,
+        title:'Adipisicing Elit',
+        artist: 'Firstname Lastname',
+        subtitle:'PRODUCT',
+        subtitleTwo:'FURNITURE',
+        url: `/img/img-five.jpg`,
+    },
+    {
+        id: 6,
+        title:'Enim Nesciunt',
+        artist: 'Firstname Lastname',
+        subtitle:'ART',
+        subtitleTwo:'OTHER',
+        url: `/img/img-six.jpg`,
+    },
+    {
+        id: 7,
+        title:'Modi Quo',
+        artist: 'Firstname Lastname',
+        subtitle:'TRAVEL',
+        subtitleTwo:'OTHER',
+        url: `/img/img-seven.jpg`,
+    },
+    {
+        id: 8,
+        title:'Totam Vero Vitae',
+        artist: 'Firstname Lastname',
+        subtitle:'TRAVEL',
+        subtitleTwo:'PRODUCT',
+        url: `/img/img-eight.jpg`,
+    },
+    {
+        id: 9,
+        title:'Voluptas Labore!',
+        artist: 'Firstname Lastname',
+        subtitle:'DESIGN',
+        subtitleTwo:'PHOTOGRAPHY',
+        url: `/img/img-nine.jpg`,
+    },
+    {
+        id: 10,
+        title:'Lorem Ipsum',
+        artist: 'Firstname Lastname',
+        subtitle:'PRODUCT',
+        subtitleTwo:'FURNITURE',
+        url: `/img/img-ten.jpg`,
     },
 ]
