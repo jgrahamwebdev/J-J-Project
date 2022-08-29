@@ -23,7 +23,7 @@ function Editorials() {
         </div>
 
         <div className="w-screen h-40 flex items-center justify-center">
-          <button className="top-3/4 w-52 h-11 text-black border text-xs border-black font-extralight">MORE ARTICLES &rarr;</button>
+          <button className="top-3/4 w-52 h-11 text-black border text-xs border-black font-extralight"><a href='/latestEditorials'>MORE EDITORIALS &rarr;</a></button>
         </div>
     </div>
   )

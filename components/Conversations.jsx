@@ -28,7 +28,7 @@ function Conversations() {
 
 
       <div className="w-screen h-[5rem] flex items-center justify-center">
-        <button className="top-3/4 w-52 h-11 text-black border text-xs border-black font-light">MORE CONVERSATIONS &rarr;</button>
+        <button className="top-3/4 w-52 h-11 text-black border text-xs border-black font-light"><a href='/latestConversations'>MORE CONVERSATIONS &rarr;</a></button>
       </div>
     </div>
   )

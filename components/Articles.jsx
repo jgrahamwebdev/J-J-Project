@@ -75,7 +75,7 @@ function Articles() {
         </div>
         
         <div className="w-screen h-[5rem] lg:h-[14rem] flex items-center justify-center">
-          <button className="top-3/4 w-52 h-11 text-black border text-xs border-black font-light">MORE ARTICLES &rarr;</button>
+          <button className="top-3/4 w-52 h-11 text-black border text-xs border-black font-light"><a href='/latestArticles'>MORE ARTICLES &rarr;</a></button>
         </div>
     </div>
   )
