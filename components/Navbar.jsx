@@ -92,17 +92,17 @@ export default function Example(props) {
           <div className="flex-[.5]">
             <Popover.Button className="p-2 inline-flex items-center justify-center text-black">
               <span className="sr-only">Open menu</span>
-              <MenuIcon className="h-6 w-6" aria-hidden="true"/>
+              <MenuIcon className="h-6 w-6 lg:h-7 lg:w-7" aria-hidden="true"/>
             </Popover.Button>
           </div>
           <div className='flex items-center justify-center flex-1'>
-            <Link href='/'><img className="h-10 w-auto cursor-pointer" src="img/logo.png" alt="Logo"/></Link>
+            <Link href='/'><img className="h-10 lg:h-12 w-auto cursor-pointer" src="img/logo.png" alt="Logo"/></Link>
           </div>
           <div className="flex justify-end flex-[.5]">
             <div className='flex items-center justify-between w-[7rem] lg:w-[8rem]'>
-              <Link href='/account'><UserIcon className="h-5 w-5 cursor-pointer mr-2 hover:text-red-600" aria-hidden="true"/></Link>
-              <SearchIcon className="h-5 w-5 cursor-pointer mr-2 hover:text-red-600" aria-hidden="true"/>
-              <Link href='/cart'><ShoppingCartIcon className="h-5 w-5 cursor-pointer hover:text-red-600" aria-hidden="true"/></Link>
+              <Link href='/account'><UserIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer mr-2 hover:text-red-600" aria-hidden="true"/></Link>
+              <SearchIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer mr-2 hover:text-red-600" aria-hidden="true"/>
+              <Link href='/cart'><ShoppingCartIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer hover:text-red-600" aria-hidden="true"/></Link>
             </div>
           </div>          
         </div>
@@ -129,18 +129,18 @@ export default function Example(props) {
                 <div className="-mr-2">
                   <Popover.Button className="p-2 inline-flex items-center justify-center text-black">
                     <span className="sr-only">Close menu</span>
-                    <XIcon className="h-6 w-6" aria-hidden="true" />
+                    <XIcon className="h-6 w-6 lg:h-7 lg:w-7" aria-hidden="true" />
                   </Popover.Button>
                 </div>
                 <div>
                   <img
-                    className="h-9 w-auto"
+                    className="h-9 lg:h-11 w-auto"
                     src="img/logo.png"
                     alt="Workflow"
                   />
                 </div>
                 <div className="">
-                  <SearchIcon className="h-5 w-5" aria-hidden="true"/>
+                  <SearchIcon className="h-5 w-5 lg:h-6 lg:w-6 cursor-pointer" aria-hidden="true"/>
                 </div>
               </div>
               <div className="mt-6">
