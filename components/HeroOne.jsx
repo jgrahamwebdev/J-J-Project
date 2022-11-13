@@ -9,7 +9,7 @@ function HeroOne() {
       </div>
 
       <div className="w-screen h-32 flex items-center justify-center self-end lg:hidden">
-        <button className="z-10 w-52 h-12 text-white border text-[11px] font-extralight">READ MORE &rarr;</button>
+        <button className="w-52 h-12 text-white border text-[11px] font-extralight">READ MORE &rarr;</button>
       </div>
 
       {/*iPad, Laptop, Desktop display*/}

@@ -5,6 +5,8 @@ import {
   ChevronRightIcon,
   MenuIcon,
   SearchIcon,
+  ShoppingCartIcon,
+  UserIcon,
   XIcon,
 } from '@heroicons/react/outline'
 import Link from 'next/link'
@@ -30,6 +32,10 @@ const solutions = [
   {
     name: 'TRAVEL',
     href: '/travel',
+  },
+  {
+    name: 'CREATE ACCOUNT/LOGIN',
+    href: '/account',
   },
 ]
 
@@ -81,19 +87,21 @@ export default function Example(props) {
 
   return (
     <Popover className="fixed lg:sticky lg:top-0 z-10">
-      <nav className="w-screen mx-auto">
+      <nav className="w-screen mx-auto items-center justify-between">
         <div className={`flex items-center py-2 px-4 justify-between ${top ? 'bg-transparent' : 'bg-white'} transition duration-300 ease-in-out lg:bg-white`}>
-          <div className="w-8">
+          <div className="w-8 flex-[.5]">
             <Popover.Button className="p-2 inline-flex items-center justify-center text-black">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true"/>
             </Popover.Button>
           </div>
-          <div>
-            <Link href='/'><img className="h-9 w-auto cursor-pointer" src="img/logo.png" alt="Logo"/></Link>
+          <div className='flex items-center justify-center flex-1'>
+            <Link href='/'><img className="h-10 w-auto cursor-pointer" src="img/logo.png" alt="Logo"/></Link>
           </div>
-          <div className="">
-            <SearchIcon className="h-5 w-5 cursor-pointer" aria-hidden="true"/>
+          <div className="flex justify-between flex-[.5]">
+            <Link href='/account'><UserIcon className="h-5 w-5 cursor-pointer mr-2 hover:text-red-600" aria-hidden="true"/></Link>
+            <SearchIcon className="h-5 w-5 cursor-pointer mr-2 hover:text-red-600" aria-hidden="true"/>
+            <Link href='/cart'><ShoppingCartIcon className="h-5 w-5 cursor-pointer hover:text-red-600" aria-hidden="true"/></Link>
           </div>          
         </div>
       </nav>

@@ -53,7 +53,7 @@ function NewsletterOne() {
     <div className='w-screen lg:w-1/2 h-[19rem] lg:h-full flex items-center justify-center flex-col'>
         <div className='relative w-full flex items-center justify-center flex-col'>
             <h1 className='mb-[2rem] font-serif text-lg'>Subscribe to our weekly newsletter</h1>
-            <div className='w-1/2 h-auto flex items-center justify-center'>
+            <div className='w-3/4 lg:w-1/2 h-auto flex items-center justify-center'>
               <input className='w-full h-[3rem] bg-gray-100 border border-gray-300 pl-4 font-serif' type="text" placeholder='Email'/>
               <button className='h-[3rem] w-[4rem] bg-gray-100 border border-gray-300'>&rarr;</button>
             </div>
