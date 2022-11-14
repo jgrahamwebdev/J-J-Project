@@ -28,7 +28,7 @@ function cart() {
           </div>
             <h1 className='text-[2rem] my-8'>CART(2):</h1>
                  
-            <div className='w-full h-[10rem] bg-pink-400 flex items-center justify-center mb-8'>
+            <div className='w-full h-[10rem] flex items-center justify-center mb-8'>
                 <div className='h-full flex-1 flex items-center justify-center'>
                   <img className='w-full h-full object-cover' src='/img/product-1.jpg'/>
                 </div>
@@ -40,8 +40,8 @@ function cart() {
                     <p className=''>In Stock</p>
                   </div>
                   <div className='h-full flex items-center justify-around lg:justify-between flex-[2] flex-col lg:flex-row'>
-                    <div className='w-1/2 flex items-center justify-between'>
-                      <p className=''>Qty:</p>
+                    <div className='w-3/4 lg:w-1/2 flex items-center justify-between'>
+                      <p className='mr-2'>Qty:</p>
                       <input className='border w-3/4' type="number"/>
                     </div>
                     <div className='w-1/2 flex items-center justify-center'>
@@ -51,7 +51,7 @@ function cart() {
                 </div>
             </div>
 
-            <div className='w-full h-[10rem] bg-pink-400 flex items-center justify-center mb-8'>
+            <div className='w-full h-[10rem] flex items-center justify-center mb-8'>
                 <div className='h-full flex-1 flex items-center justify-center'>
                 <img className='w-full h-full object-cover' src='/img/product-2.jpg'/>
                 </div>
@@ -63,8 +63,8 @@ function cart() {
                     <p className=''>In Stock</p>
                   </div>
                   <div className='h-full flex items-center justify-around lg:justify-between flex-[2] flex-col lg:flex-row'>
-                    <div className='w-1/2 flex items-center justify-between'>
-                      <p className=''>Qty:</p>
+                    <div className='w-3/4 lg:w-1/2 flex items-center justify-between'>
+                      <p className='mr-2'>Qty:</p>
                       <input className='border w-3/4' type="number"/>
                     </div>
                     <div className='w-1/2 flex items-center justify-center'>
