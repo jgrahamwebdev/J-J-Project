@@ -54,6 +54,7 @@ function Articles() {
         </div>           
         </div>
 
+
         {/*LAPTOP>DESKTOP VIEW*/}
         <div className="hidden relative xl:flex items-center justify-center flex-col w-screen h-auto mx-5 bg-white">     
             {articles.map((item) => (             

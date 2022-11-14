@@ -100,15 +100,13 @@ export default function Example(props) {
           </div>
           <div className="flex justify-end flex-[.5]">
             <div className='flex items-center justify-between w-[7rem] lg:w-[8rem]'>
-              <Link href='/account'><UserIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer mr-2 hover:text-red-600" aria-hidden="true"/></Link>
-              <SearchIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer mr-2 hover:text-red-600" aria-hidden="true"/>
-              <Link href='/cart'><ShoppingCartIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer hover:text-red-600" aria-hidden="true"/></Link>
+              <Link href='/account'><UserIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer mr-2 hover:text-slate-400" aria-hidden="true"/></Link>
+              <SearchIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer mr-2 hover:text-slate-400" aria-hidden="true"/>
+              <Link href='/cart'><ShoppingCartIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer hover:text-slate-400" aria-hidden="true"/></Link>
             </div>
           </div>          
         </div>
       </nav>
-
-
 
 
 {/********MOBILE VIEW********/}
