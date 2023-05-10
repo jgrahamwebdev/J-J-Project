@@ -10,7 +10,7 @@ function Articles() {
     <div className="flex items-center justify-center flex-col w-screen h-[34rem] lg:h-full relative bg-white">
 
         <div className='my-4'>
-          <h1 className='font-light tracking-tighter'>MY PORTFOLIO</h1>
+          <h1 className='font-light tracking-tighter'>ARTICLES</h1>
         </div>
 
         {/*MOBILE VIEW SCROLLER*/}
@@ -55,7 +55,7 @@ function Articles() {
         </div>
 
 
-        {/*LAPTOP>DESKTOP VIEW*/}
+        {/*LAPTOP/DESKTOP VIEW*/}
         <div className="hidden relative xl:flex items-center justify-center flex-col w-screen h-auto mx-5 bg-white">     
             {articles.map((item) => (             
               <div className='w-3/4 h-auto py-4' key={item.id}>
@@ -76,7 +76,7 @@ function Articles() {
         </div>
         
         <div className="w-screen h-[5rem] lg:h-[14rem] flex items-center justify-center">
-          <button className="top-3/4 w-52 h-11 text-black border text-xs border-black font-light"><a href='/latestArticles'>See More &rarr;</a></button>
+          <button className="top-3/4 w-52 h-11 text-black border text-xs border-black font-light"><a href='/latestArticles'>SEE MORE &rarr;</a></button>
         </div>
     </div>
   )

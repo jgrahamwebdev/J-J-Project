@@ -10,7 +10,7 @@ function Photography() {
       </div>
 
       {/*MOBILE VIEW*/}
-      <div className='w-screen'>
+      <div className='w-screen flex items-center justify-center'>
         <img className='lg:hidden' src="https://unsplash.it/500/500" alt="" />
       </div>
 
@@ -29,7 +29,7 @@ function Photography() {
       </div>
 
       {/*IPAD, LAPTOP, DESKTOP VIEW*/}
-      <div className='hidden lg:flex w-[95vw] h-[41%] mx-5 bg-gray-100'>
+      <div className='hidden lg:flex w-[95vw] h-[41%] mx-5 pl-4 bg-gray-100'>
         <div className='h-full w-1/2 flex items-center justify-center'>
           <img className='w-full h-[90%] object-cover' src="https://unsplash.it/1000/800" alt="" />
         </div>

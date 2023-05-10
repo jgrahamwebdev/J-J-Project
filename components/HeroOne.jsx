@@ -18,10 +18,10 @@ function HeroOne() {
           <img className='w-full h-full object-cover' src="https://unsplash.it/1000/1000" alt="" />
         </div>
         <div className='w-1/2 h-100 flex items-center justify-around flex-col'>
-          <h1 className='text-[2.5rem] font-serif text-black w-3/4'>Full Stack Web Developer & Designer</h1>
-          <p className='w-[75%] text-center'>I specialize in: JavaScript, MERN Stack, Tailwind CSS, and Python/Django. Also skilled in Java, Spring Boot, MySQL, Flask, Three.js, and MicroPython.</p>
+          <h1 className='text-[2.5rem] font-serif text-black w-3/4'>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+          <p className='w-[75%] text-center'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, facilis dolore minus non at dolorum vel velit enim atque perspiciatis, ipsum doloremque expedita odio animi quasi nam. Dolore.</p>
          
-        <button className="w-52 h-12 text-black border border-gray-300 text-[11px] font-light">MORE ABOUT ME &rarr;</button>
+        <button className="w-52 h-12 text-black border border-gray-300 text-[11px] font-light">READ MORE &rarr;</button>
       
         </div>            
       </div>

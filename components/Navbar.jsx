@@ -110,11 +110,11 @@ export default function Example(props) {
           </div>
 
           <div className="flex justify-end flex-[.5]">
-            {/* <div className='flex items-center justify-between w-[7rem] lg:w-[8rem]'>
-              <Link href='/account'><UserIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer mr-2 hover:text-slate-400" aria-hidden="true"/></Link>
-              <SearchIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer mr-2 hover:text-slate-400" aria-hidden="true" onClick={() => setShowModal(true)}/>
-              <Link href='/cart'><ShoppingCartIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer hover:text-slate-400" aria-hidden="true"/></Link>
-            </div> */}
+            <div className='flex items-center justify-between w-[7rem] lg:w-[8rem]'>
+              <Link href='/account'><UserIcon className="h-5 w-5 lg:h-[1.5rem] lg:w-[1.5rem] cursor-pointer mr-2 hover:text-slate-400" aria-hidden="true"/></Link>
+              <SearchIcon className="h-5 w-5 lg:h-[1.5rem] lg:w-[1.5rem] cursor-pointer mr-2 hover:text-slate-400" aria-hidden="true" onClick={() => setShowModal(true)}/>
+              <Link href='/cart'><ShoppingCartIcon className="h-5 w-5 lg:h-[1.5rem] lg:w-[1.5rem] cursor-pointer hover:text-slate-400" aria-hidden="true"/></Link>
+            </div>
           </div> 
                    
         </div>
@@ -179,7 +179,7 @@ export default function Example(props) {
         leaveTo="opacity-0 scale-95"
       >
         <Popover.Panel focus className="absolute top-0 inset-x-0 transition transform origin-top-right z-10">
-          <div className="bg-white w-[40%] h-screen flex flex-col justify-between">
+          <div className="bg-white w-3/4 lg:w-[40%] h-screen flex flex-col justify-between">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div className="-mr-2">
@@ -196,7 +196,7 @@ export default function Example(props) {
                   /> */}
                 </div>
                 <div className="">
-                  {/* <SearchIcon className="h-5 w-5 lg:h-6 lg:w-6 cursor-pointer" aria-hidden="true"/> */}
+                  <SearchIcon className="h-5 w-5 lg:h-6 lg:w-6 cursor-pointer" aria-hidden="true"/>
                 </div>
               </div>
               <div className="mt-6">
