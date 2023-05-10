@@ -39,6 +39,10 @@ const solutions = [
     name: 'CREATE ACCOUNT/LOGIN',
     href: '/account',
   },
+  {
+    name: 'SHOP',
+    href: '/shop',
+  },
 ]
 
 const resources = [
@@ -93,22 +97,26 @@ export default function Example(props) {
     <Popover className="fixed lg:sticky lg:top-0 z-10">
       <nav className="w-screen mx-auto items-center justify-between">
         <div className={`flex items-center py-2 px-4 justify-between ${top ? 'bg-transparent' : 'bg-white'} transition duration-300 ease-in-out lg:bg-white`}>
+          
           <div className="flex-[.5]">
             <Popover.Button className="p-2 inline-flex items-center justify-center text-black">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6 lg:h-7 lg:w-7" aria-hidden="true"/>
             </Popover.Button>
           </div>
+
           <div className='flex items-center justify-center flex-1'>
-            <Link href='/'><img className="h-10 lg:h-12 w-auto cursor-pointer" src="img/logo.png" alt="Logo"/></Link>
+            <Link href='/'><img className="h-8 w-auto cursor-pointer" src="img/logo.png" alt="Logo"/></Link>
           </div>
+
           <div className="flex justify-end flex-[.5]">
-            <div className='flex items-center justify-between w-[7rem] lg:w-[8rem]'>
+            {/* <div className='flex items-center justify-between w-[7rem] lg:w-[8rem]'>
               <Link href='/account'><UserIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer mr-2 hover:text-slate-400" aria-hidden="true"/></Link>
               <SearchIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer mr-2 hover:text-slate-400" aria-hidden="true" onClick={() => setShowModal(true)}/>
               <Link href='/cart'><ShoppingCartIcon className="h-5 w-5 lg:h-7 lg:w-7 cursor-pointer hover:text-slate-400" aria-hidden="true"/></Link>
-            </div>
-          </div>          
+            </div> */}
+          </div> 
+                   
         </div>
       </nav>
 
@@ -171,7 +179,7 @@ export default function Example(props) {
         leaveTo="opacity-0 scale-95"
       >
         <Popover.Panel focus className="absolute top-0 inset-x-0 transition transform origin-top-right z-10">
-          <div className="bg-white w-screen h-screen flex flex-col justify-between">
+          <div className="bg-white w-[40%] h-screen flex flex-col justify-between">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div className="-mr-2">
@@ -181,14 +189,14 @@ export default function Example(props) {
                   </Popover.Button>
                 </div>
                 <div>
-                  <img
+                  {/* <img
                     className="h-9 lg:h-11 w-auto"
                     src="img/logo.png"
                     alt="Workflow"
-                  />
+                  /> */}
                 </div>
                 <div className="">
-                  <SearchIcon className="h-5 w-5 lg:h-6 lg:w-6 cursor-pointer" aria-hidden="true"/>
+                  {/* <SearchIcon className="h-5 w-5 lg:h-6 lg:w-6 cursor-pointer" aria-hidden="true"/> */}
                 </div>
               </div>
               <div className="mt-6">
@@ -197,7 +205,7 @@ export default function Example(props) {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-m-3 p-3 flex items-center justify-between rounded-md"
+                      className="-m-3 p-3 flex items-center justify-between rounded-md hover:bg-gray-200"
                     >          
                     <span className="ml-3 text-base font-light text-black">{item.name}</span>
                     <ChevronRightIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />

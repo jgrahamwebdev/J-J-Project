@@ -5,7 +5,7 @@ function Editorials() {
   return (
     <div className='w-screen h-[58rem] lg:h-[75rem] flex items-center justify-center flex-col relative bg-white'>
         <div className='my-10'>
-            <h1 className='font-light text-[15px] tracking-tighter'>EDITORIALS</h1>
+            <h1 className='font-light text-[15px] tracking-tighter'>RECOMMENDATIONS</h1>
         </div>
 
         <div className='flex flex-col items-center justify-center w-full'>
